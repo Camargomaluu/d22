@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/validacao.js"></script>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div id="box_formulario">
+                <h2>Formulário de Cadastro do Funcionário</h2>
+
+                <div id="img">
+                    <img src="img/volks logo.webp">    
+                </div>
+
+                <p id="f_alert">
+                    Os campos não foram preenchidos corretamente!
+                </p>
+
+                <form action="processar_formulario">
+                    
+                    <div class="f_line">
+                        <span>
+                            <label>Nome</label>
+                            <input type="text" id="i_nome" required>
+                        </span>
+
+                        <span>
+                            <label>Sobrenome</label>
+                            <input type="text" id="i_sobrenome" required>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label>Data de Nascimento</label>
+                            <input type="data" id="i_data_nascimento" required>
+                        </span>
+
+                        <span>
+                            <label>Data da Admissão</label>
+                            <input type="data" id="i_data_admissao" required>
+                        </span>
+
+                        <div class="f_line">
+                            <span>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" required>
+                            </span>
+                        </div>
+
+                        <div class="f_line_2">
+                            <span>
+                                <label>Cargo</label>
+                                <input type="text" id="i_cargo" required>
+                            </span>
+
+                            <span>
+                                <label>Setor</label>
+                                <input type="text" id="i_setor" required>
+                            </span>
+                        </div>
+
+                        <div class="f_line_2">
+                            <input type="submit" id="btt_form" onclick="validacao()" value="Cadastrar">
+                        </div>
+
+                </form>
+            </div>
+        </div>
+        
+    </body>
+    </html>

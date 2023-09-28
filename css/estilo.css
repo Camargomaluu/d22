@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto +Flex:wght@100;200;300 & display=swap');
+
+
+body{
+    font-family: 'Roboto Flex', sem serifa;
+    padding: 0px;
+    margin: 0px;
+    background-color: #8895b3;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+}
+
+#box_formulario{
+    margin: auto;
+    width: max-content;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#box_formulario h2{
+    padding: 10px;
+    text-align: center;
+}
+
+#img{
+    width: 100%;
+}
+
+#f_alert{
+    display: none;
+    background-color: #f25c54;
+    padding: 12px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.f_line{
+    border-radius: 5px;
+}
+
+.f_line_2{
+    display: flex;
+    width: 100%;
+}
+
+.f_line span{
+    padding: 10px;
+}
+
+.f_line label{
+    display: block;
+    padding-bottom: 2px;
+}
+
+.f_line input[type=text], input[type=date]{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.f_line input[type=radio]{
+    border: 2px solid #808080;
+}
+
+#btt_form{
+    cursor: pointer;
+    width: 532px;
+    height: 35px;
+    background-color: #6320ee;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 19px;
+    transition: 0.5px;
+}
+
+#btt_form:hover{
+    transition: 0.5s;
+    background-color: #23c9ff;
+}
